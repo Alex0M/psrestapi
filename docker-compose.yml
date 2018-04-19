@@ -1,0 +1,9 @@
+version: '3'
+services:
+  metrics_api:
+    build: ./app
+    container_name: metrics_api
+    ports:
+      - 4000:4000
+    pid: "host"
+    restart: always
